@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<base href="/" target="_self" />
+
+	<title>{% if page.title %}{{ page.title }} en {% endif %}{{ site.title }}</title>
+	<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} {{ page.title }}" />
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	{% if page.map %}
+	<meta name="geo.position" content="{{ page.map.lat }}; {{ page.map.lng }}">
+	<meta name="geo.placename" content="{{ page.map.name }}">
+	{% endif %}
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+	================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css?v=1">
+
+	<link rel="stylesheet" href="fonts/webfontkit-jura/stylesheet.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=tibetan' rel='stylesheet' type='text/css'>
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	
+	<link href="https://plus.google.com/102721572594228637143" rel="publisher" >
+</head>
+<body class="{{ page.section }}">
+
+{{ content }}
+
+{% include footer.html %}
+	<script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+	{% if map %}
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+	{% endif %}
+	<script src="javascripts/script.js?v=1"></script>
+	<script>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', '{{ site.googleanalytics.account }}']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	</script>
+</body>
+</html>
