@@ -1,8 +1,8 @@
 safe: true
 lsi: true
-pygments: false
-base: http://k1000.github.com/meriling/
-title: Comunidad Dzogchen de Canarias
+highlighter: pygments
+base: http://k1000.github.io
+title: Kamil Selwa
 navigation:
   - text: Home
     url: /index.html
