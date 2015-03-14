@@ -7,31 +7,8 @@ Server instrumentation with upstart, gunicorn, Django
 =====================================================
 
 Create the init script for upstart in ``/etc/init/upstart-job.conf`` 
-::
-  start on runlevel [2345]
-  stop on runlevel [06]
-  respawn
-  respawn limit 10 5
-    
-  script
-    NAME=app_name
-    PORT=8002
-    NUM_WORKERS=3
-    TIMEOUT=120
-    USER=john
-    GROUP=john
-    LOGFILE=/var/log/gunicorn/$NAME.log
-    LOGDIR=$(dirname $LOGFILE)
-    test -d $LOGDIR || mkdir -p $LOGDIR
-    cd /home/john/app
-    exec /home/john/app/env/bin/gunicorn \
-    --env DJANGO_SETTINGS_MODULE=$NAME.settings \
-    $NAME.wsgi:application \
-    -w $NUM_WORKERS -t $TIMEOUT \
-    --user=$USER --group=$GROUP --log-level=debug \
-    --name=$NAME -b 78.47.135.2:$PORT
-    --log-file=$LOGFILE 2>>$LOGFILE
-  end script
+
+{% gist 438ce24c7c2b98ed77fa %}
 
 .. note:: PORT=8002 must match the number you configured in server configuration. In case you are running multiple websites on the same machine you'll have to increment this number accordingly.
 
