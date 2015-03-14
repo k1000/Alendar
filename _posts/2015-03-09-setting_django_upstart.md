@@ -13,14 +13,19 @@ PORT=8002 must match the number you configured in server configuration. In case 
 As a rule-of-thumb set the --workers (NUM_WORKERS) according to the following formula: 2 * CPUs + 1. The idea being, that at any given time half of your workers will be busy doing I/O. For a single CPU machine it would give you 3.
 
 Add new system service
+
 ```sh
 # sudo ln -fs /etc/init/upstart-job /etc/init.d/upstart-job
 ```
+
 Make it starts at system boot
+
 ```sh
 # sudo update-rc.d upstart-job defaults
 ```
+
 And start it now
+
 ```sh
 # sudo service upstart-job start
 ```
