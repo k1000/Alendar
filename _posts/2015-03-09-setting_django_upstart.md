@@ -15,7 +15,7 @@ As a rule-of-thumb set the --workers (NUM_WORKERS) according to the following fo
 Add new system service
 
 ```sh
-# sudo ln -fs /etc/init/upstart-job /etc/init.d/upstart-job
+# sudo ln -fs /etc/init/upstart-job.conf /etc/init.d/upstart-job
 ```
 
 Make it starts at system boot
