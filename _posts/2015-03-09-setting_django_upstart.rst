@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: it
-title: Server instrumentation with Upstart, Gunicorn & Django
+title: Ubuntu server instrumentation with Upstart, Gunicorn & Django
 ---
 
 Create the init script for upstart in ``/etc/init/upstart-job.conf`` 
