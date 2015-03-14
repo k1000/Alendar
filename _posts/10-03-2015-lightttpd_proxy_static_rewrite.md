@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: posts
+categories: it
 title: Lighttpd reverse proxy with static files
 ---
 
