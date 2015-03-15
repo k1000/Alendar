@@ -17,8 +17,6 @@ layout: base
 			{% endfor %}
 			</ul>
 		</nav>
-		
-		<!-- <img src="http://www.vaalserberg-garden.com/v2/moon_img.php" class="one column" id="moon" /> -->
 	</aside>
 	{% endif %}
 
@@ -26,7 +24,7 @@ layout: base
 		{% if page.image %}
 		<figure>
 		<!-- http://proxy.boxresizer.com/convert?resize=650x150&source= -->
-		<img src="../images/{{ page.image }}" alt="{{ page.title }}" width="100%" />
+		<img src="{{ page.img }}" alt="{{ page.title }}" width="100%" />
 		{% if page.by %}<figcaption>por <em>{{ page.by }}</em></figcaption>{% endif %}
 		<figure>
 		{% endif %}
