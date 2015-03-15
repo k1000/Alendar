@@ -4,6 +4,7 @@ section: design
 cathegories: design
 ---
 {% for page in site.pages %}
+  <p>{{ page.title }}</p>
   {% if page.layout == 'design' %}  
     {% include design_preview.html %}
   {% endif %}
