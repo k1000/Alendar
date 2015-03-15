@@ -3,6 +3,8 @@ layout: site
 section: design
 cathegories: design
 ---
-{% for design in site.design %}
-{% include design_preview.html %}
+{% for page in site.pages %}
+  {% if page.layout == 'design' %}  
+    {% include design_preview.html %}
+  {% endif %}
 {% endfor %}
