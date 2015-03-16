@@ -3,8 +3,7 @@ layout: site
 section: design
 ---
 
-{% for page in site.design %}
-  <p>{{ page }}</p>
+{% for page in site.pages %}
   {% if page.layout == 'design' %}  
     {% include design_preview.html %}
   {% endif %}
