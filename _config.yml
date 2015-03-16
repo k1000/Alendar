@@ -3,6 +3,9 @@ lsi: true
 highlighter: pygments
 base: http://k1000.github.io
 title: Kamil Selwa
+collections:
+  - design
+  - web_design
 navigation:
   - text: Home
     url: /index.html
