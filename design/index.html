@@ -3,11 +3,8 @@ layout: site
 section: design
 cathegories: design
 ---
-{{ site.pages }}
 
 {% for page in site.pages %}
   <p>{{ page.title }}</p>
-  {% if page.layout == 'design' %}  
-    {% include design_preview.html %}
-  {% endif %}
+
 {% endfor %}
