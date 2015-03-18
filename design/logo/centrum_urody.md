@@ -1,8 +1,7 @@
 ---
 layout: design
-title: eeeeeeeeeeeeeeee
+title: Logo
 img:
-  text: Comunidad Dzogchen
   src: amarillo/comunidad-dzogchen
 ---
 ## sssss
