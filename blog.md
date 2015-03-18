@@ -10,14 +10,6 @@ sitemap:
 {% endfor %}
 
 
-<hr>
-
 {% for page in site.pages %}
-
-  <url>
-    <loc>{{ site.baseurl }}{{ page.url }}</loc>
-    <lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
-    <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-    <priority>{{ page.sitemap.priority }}</priority>
-  </url>
+  <h1>{{ page.title }}</h1>
 {% endfor %}
