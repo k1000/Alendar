@@ -8,3 +8,16 @@ sitemap:
 {% for post in site.posts %}
   {% include post_preview.html %}
 {% endfor %}
+
+
+<hr>
+
+{% for page in site.pages %}
+
+  <url>
+    <loc>{{ site.baseurl }}{{ page.url }}</loc>
+    <lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
+    <changefreq>{{ page.sitemap.changefreq }}</changefreq>
+    <priority>{{ page.sitemap.priority }}</priority>
+  </url>
+{% endfor %}
