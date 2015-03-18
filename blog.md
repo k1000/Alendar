@@ -8,8 +8,3 @@ sitemap:
 {% for post in site.posts %}
   {% include post_preview.html %}
 {% endfor %}
-
-
-{% for page in site.pages %}
-  <h1>{{ page.title }}</h1>
-{% endfor %}
