@@ -6,5 +6,5 @@ sitemap:
   lastmod: 2011-09-29T18:56:19+02:00
 ---
 {% for page in site.pages %}
-  <h1><a href="{{ page.url }}">page.title</a></h1>
+  <h1><a href="{{ page.url }}">{{page.title}}</a></h1>
 {% endfor %}
