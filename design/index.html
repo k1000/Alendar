@@ -4,6 +4,7 @@ section: design
 ---
 
 {% for page in site.pages %}
+  <h2>{{ pagetitle }}</h2>
   {% if page.layout == 'design' %}  
     {% include design_preview.html %}
   {% endif %}
