@@ -7,4 +7,3 @@ title: Design
   {% include design_preview.html %}
   {% endif %}
 {% endfor %}
-
