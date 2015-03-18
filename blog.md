@@ -1,9 +1,6 @@
 ---
 layout: base
-sitemap:
-  priority: 0.7
-  changefreq: weekly
-  lastmod: 2011-09-29T18:56:19+02:00
+title: Selwa Rerum
 ---
 {% for post in site.posts %}
   {% include post_preview.html %}
