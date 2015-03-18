@@ -1,3 +1,7 @@
-body {
+body.index {
     background: url(http://c1.staticflickr.com/9/8689/16670531698_b81eed7de0_k.jpg) 0 center no-repeat;
+}
+.index h1 {
+    text-align: center;
+    color: white;
 }
