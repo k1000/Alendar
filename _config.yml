@@ -1,8 +1,8 @@
 safe: true
 lsi: true
 highlighter: pygments
-base: http://k1000.github.io
-title: Kamil Selwa
+# base: http://k1000.github.io
+title: Alendar
 collections:
   - web_design
 navigation:
@@ -16,11 +16,11 @@ profiles:
   - label: google+
     url: https://plus.google.com/102721572594228637143/posts
   - label: facebook
-    url: https://www.facebook.com/meriling
+    url: https://www.facebook.com/alendar
   - label: twitter
     url: https://www.facebook.com/merilingtenerife
   - label: YouTube
-    url: https://www.youtube.com/user/meriling
+    url: https://www.youtube.com/user/alendar
 disqus:author:
   name: Meriling
   email: kamil.azul@meriling.es
