@@ -114,8 +114,8 @@ p {
 
 @media (min-width: 768px) {
     .navbar-default {
-        background-color:transparent;
-        border-color: transparent
+        background-color: #ebeae2;
+        border-color: transparent;
     }
 
     .navbar-default .navbar-header .navbar-brand {
@@ -322,6 +322,9 @@ section.features .feature-item {
     text-align: center;
     margin-bottom: 100px
 }
+section.screeenshots {
+    background: #ebeae2;
+}
 
 section.contact h2,section.cta .cta-content h2 {
     margin-top: 0;
@@ -360,6 +363,13 @@ section.cta .cta-content h2 {
     color: #fff;
     max-width: 450px;
     font-size: 50px
+}
+
+section.cta .cta-content h3 {
+    color: #fff;
+    max-width: 450px;
+    font-weight: normal;
+    font-size: 24px
 }
 
 @media (min-width: 768px) {
@@ -462,8 +472,8 @@ footer ul li a.active,footer ul li a:active,footer ul li a:focus,footer ul li a:
 
 .btn-outline.active,.btn-outline:active,.btn-outline:focus,.btn-outline:hover {
     color: #fff;
-    background-color: #fdcc52;
-    border-color: #fdcc52
+    background-color: #e74c3c;
+    border-color: #e74c3c;
 }
 
 .btn {
